@@ -48,7 +48,7 @@
     </div>
     <div
       :class="query == '' ? 'hidden' : ''"
-      class="border rounded-lg mt-1 flex justify-center"
+      class="border dark:border-slate-500 rounded-lg mt-1 flex justify-center"
     >
       <div v-if="isLoading">
         <Spinner class="my-5"></Spinner>
@@ -57,10 +57,10 @@
         <Card
           :name="pokemon.name"
           :sprite="pokemon.sprites?.front_default"
+          :id="`#${pokemon?.id?.toString().padStart(3, 0)}`"
         ></Card>
       </div>
     </div>
-    
   </form>
 </template>
 <script setup>
@@ -71,7 +71,7 @@ let isLoading = ref(false);
 async function search() {
   isLoading.value = true;
   await fetchPokemon(query.value).then((data) => (pokemon.value = data));
-  console.log(pokemon.value)
+  console.log(pokemon.value);
   isLoading.value = false;
 }
 

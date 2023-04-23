@@ -4,9 +4,7 @@
   >
     <div class="text-lg mx-1 dark:text-white">PokeSearch Nuxt &hearts;</div>
     <div class="col-start-3 mt-1 justify-self-end align-middle">
-
-        <ToggleDarkMode></ToggleDarkMode>
-
+      <ToggleDarkMode></ToggleDarkMode>
     </div>
   </nav>
 </template>
