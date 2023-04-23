@@ -1,5 +1,5 @@
-<template>
-  <div class="mt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+<template >
+  <div class="pt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 ">
     
     <Search class="col-span-full my-auto" ></Search>
     <Card
