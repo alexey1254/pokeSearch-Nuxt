@@ -9,7 +9,7 @@
       :id="`#${poke.id.toString().padStart(3, 0)}`"
     />
     <nav class="col-span-full w-full px-10">
-      <Navigation></Navigation>
+      <!--<Navigation/>-->
     </nav>
   </div>
 </template>
