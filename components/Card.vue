@@ -29,7 +29,7 @@
 </template>
 <script setup>
 defineProps({
-  id: Number,
+  id: String,
   name: String,
   sprite: String,
   type: String,

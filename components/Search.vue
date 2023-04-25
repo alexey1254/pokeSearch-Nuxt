@@ -34,6 +34,7 @@
         type="search"
         name="pokemon"
         id="default-search"
+        :class="query == '' ? '' : 'rounded-b-none'"
         class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Search Pokemon"
         required
@@ -48,7 +49,7 @@
     </div>
     <div
       :class="query == '' ? 'hidden' : ''"
-      class="border dark:border-slate-500 rounded-lg mt-1 flex justify-center"
+      class="border dark:border-slate-500 dark:bg-slate-600 rounded-b-lg flex justify-center"
     >
       <div v-if="isLoading">
         <Spinner class="my-5"></Spinner>
@@ -70,7 +71,7 @@ let isLoading = ref(false);
 
 async function search() {
   isLoading.value = true;
-  await fetchPokemon(query.value).then((data) => (pokemon.value = data));
+  await fetchPokemon(query.value.toLowerCase()).then((data) => (pokemon.value = data));
   console.log(pokemon.value);
   isLoading.value = false;
 }
