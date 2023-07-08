@@ -1,6 +1,5 @@
 <template>
   <button
-  
     id="theme-toggle"
     type="button"
     class="hover:animate-pulse -mt-1 sm:ml-auto text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
@@ -9,7 +8,7 @@
     <svg
       id="theme-toggle-dark-icon "
       :class="isDark == false ? 'hidden' : ''"
-      class="w-4 h-4 "
+      class="w-4 h-4"
       fill="currentColor"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
@@ -38,5 +37,4 @@
 import { useDark, useToggle } from "@vueuse/core";
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
-console.log(isDark.value);
 </script>

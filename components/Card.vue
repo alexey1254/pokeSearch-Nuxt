@@ -5,9 +5,8 @@
     >
       <a href="#">
         <div class="blob mx-auto h-32">
-          <img class=" rounded-t-lg mx-auto mt-2" :src="sprite" alt="" />
+          <img class="rounded-t-lg mx-auto mt-2" :src="sprite" alt="" />
         </div>
-        
       </a>
       <div class="p-5">
         <a href="#">
@@ -20,9 +19,9 @@
             {{ id }}
           </div>
         </a>
-        <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <!-- <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">
           Breve texto del pokemon
-        </p>
+        </p> -->
       </div>
     </div>
   </div>

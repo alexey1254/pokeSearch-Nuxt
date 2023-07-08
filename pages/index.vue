@@ -1,8 +1,7 @@
 <template>
-  <div class="pt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+  <div class="pt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 h-screen">
     <Search class="col-span-full my-auto"></Search>
     <Card
-      class=""
       v-for="poke in pokemons"
       :name="poke.name"
       :sprite="poke.sprites?.front_default"
