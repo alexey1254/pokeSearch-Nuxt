@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 h-screen">
+  <div class="pt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
     <Search class="col-span-full my-auto"></Search>
     <Card
       v-for="poke in pokemons"
