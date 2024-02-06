@@ -22,5 +22,5 @@ async function fetchPokemons(number) {
 }
 
 let pokemons = [];
-pokemons = await fetchPokemons(10);
+pokemons = await fetchPokemons(20);
 </script>
